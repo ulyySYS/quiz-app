@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className="App">
-      <HashRouter basename={window.location.pathname || ''}>
+      <HashRouter basename={process.env.PUBLIC_URL}>
         <Routes>        
           <Route path="/taking-quiz" element={<Quiz/>}/>
           <Route exact path="/" element={<FirstPage/>}/>
